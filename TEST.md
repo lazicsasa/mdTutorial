@@ -1,3 +1,5 @@
+<b>Proba za BOLD teksta</b>
+
 # Markdown Syntax Explain
 
 [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
