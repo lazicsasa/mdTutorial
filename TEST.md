@@ -1,4 +1,4 @@
-<b>Proba za BOLD teksta</b>
+<b>Proba za BOLD teksta</b><br>
 Običan tekst
 **BOLD .md syntax**
 
