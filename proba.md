@@ -32,7 +32,8 @@ df
 
 sdf
 
-sd
+<a id="custom-anchor"></a>
+Ovde bi trebao da se zaustavi
 
 fsd
 
@@ -77,3 +78,5 @@ fsdfsdfsdf
 [link3](https://github.com/lazicsasa/mdTutorial/blob/main/TEST.md#Paragraphs-and-Line-Breaks)
 
 [link 55](https://github.com/lazicsasa/mdTutorial/blob/main/TEST.md#blockquotes)
+
+[Go here](#custom-anchor)
