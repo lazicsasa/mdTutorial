@@ -70,4 +70,4 @@ fsd
 fsdfsdfsdf
 [link](#Manji-naslov)
 
-[link2](#custom-id)
+[link2](#Najmanji-naslov)
