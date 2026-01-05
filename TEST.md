@@ -1,3 +1,5 @@
+E = mc<sup>2</sup>
+
 # Markdown Syntax Explain
 
 [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
