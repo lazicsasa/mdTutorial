@@ -4,7 +4,7 @@
 
 [Extended Syntax](https://www.markdownguide.org/extended-syntax/)
 
-
+### Proba za naslov 321
 ---
 
 # Markdown: Syntax
@@ -357,6 +357,8 @@ Za anchor sintaksa je kao u HTML-u ...
 Probano na GitHub-u - RADi!!!
 
 ---
+
+[Link sasa](#Proba-za-naslov-321)
 
 ### Emphasis
 
