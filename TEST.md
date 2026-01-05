@@ -1,6 +1,9 @@
 <b>Proba za BOLD teksta</b><br>
-Običan tekst
+Običan tekst<br>
 **BOLD .md syntax**
+
+<b><i>Text bold/italic</b></i>
+
 
 
 # Markdown Syntax Explain
