@@ -36,6 +36,8 @@ sd
 
 fsd
 
+Proba za link u sred nekog teksta
+
 f
 sdf
 
@@ -71,3 +73,5 @@ fsdfsdfsdf
 [link](#Manji-naslov)
 
 [link2](#Najmanji-naslov)
+
+[link3](#sred-nekog-teksta)
