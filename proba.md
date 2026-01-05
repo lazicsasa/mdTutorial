@@ -74,4 +74,4 @@ fsdfsdfsdf
 
 [link2](#Najmanji-naslov)
 
-[link3](#sred-nekog-teksta)
+[link3](#TEST.md/Paragraphs-and-Line-Breaks)
