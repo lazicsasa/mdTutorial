@@ -2,7 +2,9 @@
 Običan tekst<br>
 **BOLD .md syntax**
 
-<b><i>Text bold/italic</b></i>
+<b><i>Text bold/italic - HTML tag</b></i>
+
+***Text bold/italic - md syntax***
 
 
 
