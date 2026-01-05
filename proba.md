@@ -1,7 +1,7 @@
 ## Naslov
 Neki tekst
 
-## Veći naslov [#custom id]
+## Veći naslov [custom id]
 Ponovo neki tekst
 
 ## Manji naslov
