@@ -1,7 +1,7 @@
 ## Naslov
 Neki tekst
 
-## Veći naslov
+## Veći naslov {#custom-id}
 Ponovo neki tekst
 
 ## Manji naslov
@@ -17,3 +17,5 @@ ashdjkahdkjhaskjdh
 ----
 ### Najmanji naslov
 Neki tekst
+
+[link](#custom-id)
