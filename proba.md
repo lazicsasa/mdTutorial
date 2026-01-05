@@ -68,4 +68,4 @@ sdf
 sd
 fsd
 fsdfsdfsdf
-[link](#Manjinaslov)
+[link](#Manji-naslov)
