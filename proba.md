@@ -68,4 +68,4 @@ sdf
 sd
 fsd
 fsdfsdfsdf
-[link](#custom-id)
+[link](#Manji naslov)
