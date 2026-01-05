@@ -1,4 +1,7 @@
 <b>Proba za BOLD teksta</b>
+Običan tekst
+**BOLD .md syntax**
+
 
 # Markdown Syntax Explain
 
