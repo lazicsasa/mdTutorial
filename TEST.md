@@ -447,7 +447,7 @@ Some of these words <ins>will be underlined</ins>.
 
 ---
 
-<font color="red">This text is red!</font>
+<p style="color: red;">This text is red!</p>
 
 <font color="blue">This text is blue!</font>
 
