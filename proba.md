@@ -1,7 +1,7 @@
 ## Naslov
 Neki tekst
 
-## Veći naslov{#custom-id}
+## Veći naslov {#custom id}
 Ponovo neki tekst
 
 ## Manji naslov
@@ -69,3 +69,5 @@ sd
 fsd
 fsdfsdfsdf
 [link](#Manji-naslov)
+
+[link2](#custom-id)
