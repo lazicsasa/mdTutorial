@@ -1,62 +1,12 @@
 [clickMe](https://lazicsasa.com "Tekst koji se pojavljuje kada se postavi kursor miša")
 
+<img src="images/github.png" width="200" height="100">
+<img src="images/github.png" width="300">
+<img src="images/github.png" width="400">
 
 
 
 
-
-
-
-
-
-
-
-
-| Sintaksa   | Znak     | Opis         |
-| :---:      |  :----:  | :---         |
-| `&copy;`   | &copy;   | Copyright    |
-| `&reg;`    | &reg;    | Registered   |
-| `&trade;`  | &trade;  | Trademark    |
-| `&sect;`   | &sect;   | Section      |
-| `&para;`   | &para;   | Paragraph    |
-| `&euro;`   | &euro;   | Euro         |
-| `&dollar;` | &dollar; | Dollar       |
-| `&pound;`  | &pound;  | Pound        |
-| `&yen;`    | &yen;    | Yen          |
-| `&cent;`   | &cent;   | Cent         |
-| `&frac14;` | &frac14; | Math         |
-| `&frac12;` | &frac12; | Math         |
-| `&frac34;` | &frac34; | Math         |
-| `&le;`     | &le;     | Math         |
-| `&ge;`     | &ge;     | Math         |
-| `&ne;`     | &ne;     | Math         |
-| `&asymp;`  | &asymp;  | Math         |
-| `&infin;`  | &infin;  | Math         |
-| `&plusmn;` | &plusmn; | Math         |
-| `&radic;`  | &radic;  | Math         |
-| `&check;`  | &check;  | Checkmark    |
-| `&cross;`  | &cross;  | Checkmark    |
-| `&bull;`   | &bull;   | Checkmark    |
-| `&starf;`  | &starf;  | Checkmark    |
-| `&star;`   | &star;   | Checkmark    |
-| `&alpha;`  | &alpha;  | Greek letter |
-| `&beta;`   | &beta;   | Greek letter |
-| `&gamma;`  | &gamma;  | Greek letter |
-| `&delta;`  | &delta;  | Greek letter |
-| `&theta;`  | &theta;  | Greek letter |
-| `&lambda;` | &lambda; | Greek letter |
-| `&pi;`     | &pi;     | Greek letter |
-| `&sigma;`  | &sigma;  | Greek letter |
-| `&omega;`  | &omega;  | Greek letter |
-| `&larr;`   | &larr;   | Arrow        |
-| `&rarr;`   | &rarr;   | Arrow        |
-| `&uarr;`   | &uarr;   | Arrow        |
-| `&darr;`   | &darr;   | Arrow        |
-| `&harr;`   | &harr;   | Arrow        |
-| `&rArr;`   | &rArr;   | Arrow        |
-| `&lArr;`   | &lArr;   | Arrow        |
-| `x<sup>2</sup>`   | x<sup>2</sup>    | Superscript  |
-| `H<sub>2</sub>O`  | H<sub>2</sub>O   | Subscript    |
 
 
 <!-- NOTE Ovo još razraditi, po potrebi -->
