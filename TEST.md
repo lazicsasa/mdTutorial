@@ -1,4 +1,7 @@
 
+[![GitHub Logo](images/github.png)](https://lazicsasa.com)
+
+
 [Go here](#custom-anchor)
 
 <a href="https://lazicsasa.com" target="_blank" rel="noopener noreferrer">
