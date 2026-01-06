@@ -1,3 +1,15 @@
+| Sintaksa   | Znak     | Opis         |
+| :---      |  :----:  | :---         |
+| `&copy;`   | &copy;   | Copyright    |
+| `&reg;`    | &reg;    | Registered   |
+| `&trade;`  | &trade;  | Trademark    |
+| `&sect;`   | &sect;   | Section      |
+| `&para;`   | &para;   | Paragraph    |
+| `&euro;`   | &euro;   | Euro         |
+| `&dollar;` | &dollar; | Dollar       |
+| `&pound;`  | &pound;  | Pound        |
+| `&yen;`    | &yen;    | Yen          |
+| `&cent;`   | &cent;   | Cent         |
 
 <!-- NOTE Ovo još razraditi, po potrebi -->
 
