@@ -1,4 +1,6 @@
 
+&copy; 2004 Foo Corporation
+
 [![GitHub Logo](images/github.png)](https://lazicsasa.com)
 
 
