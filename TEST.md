@@ -1,3 +1,12 @@
+<figure>
+    <img src="images/github.png" alt="Albuquerque, New Mexico">
+    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
+</figure>
+
+
+
+
+
 [clickMe](https://lazicsasa.com "Tekst koji se pojavljuje kada se postavi kursor miša")
 
 <img src="images/github.png" width="200" height="100">
