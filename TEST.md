@@ -1,5 +1,8 @@
-[![GitHub Logo](images/blok_koda_primer.png)](https://lazicsasa.com)
 
+
+<a href="https://lazicsasa.com" target="_blank" rel="noopener noreferrer">
+  <img src="images/blok_koda_primer.png" alt="My Logo">
+</a>
 
 
 # Markdown Syntax Explain
