@@ -1,4 +1,5 @@
 
+[Go here](#custom-anchor)
 
 <a href="https://lazicsasa.com" target="_blank" rel="noopener noreferrer">
   <img src="images/blok_koda_primer.png" alt="My Logo">
@@ -46,7 +47,7 @@
 can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
 
 ----
-
+<a id="custom-anchor"></a>
 ## Overview
 
 ### Philosophy
