@@ -1,4 +1,17 @@
-I need to highlight these ==very important words==.
+# Centriranje texta i naslova
+
+<center>This text is centered.</center>
+
+# <center>This naslov veći is centered.</center>
+
+## <center>This naslov manji is centered.</center>
+
+---
+
+Some of these words <ins>will be underlined</ins>.
+
+---
+
 
 <figure>
     <img src="images/github.png" alt="Albuquerque, New Mexico">
