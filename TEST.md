@@ -1,4 +1,4 @@
-
+[![GitHub Logo](images/blok_koda_primer.png)](https://lazicsasa.com)
 
 
 
