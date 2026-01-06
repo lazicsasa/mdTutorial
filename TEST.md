@@ -1,189 +1,240 @@
-# Centriranje texta i naslova
-
-<center>This text is centered.</center>
-
-# <center>This naslov veći is centered.</center>
-
-## <center>This naslov manji is centered.</center>
-
----
-
-Some of these words <ins>will be underlined</ins>.
-
----
-
-
-<figure>
-    <img src="images/github.png" alt="Albuquerque, New Mexico">
-    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
-</figure><hr>
-
-
-
-
-
-[clickMe](https://lazicsasa.com "Tekst koji se pojavljuje kada se postavi kursor miša")
-
-<img src="images/github.png" width="200" height="100">
-<img src="images/github.png" width="300">
-<img src="images/github.png" width="400">
-
-
-
-
-
-
-<!-- NOTE Ovo još razraditi, po potrebi -->
-
-&copy; 2004 Foo Corporation
-
-[![GitHub Logo](images/github.png)](https://lazicsasa.com)
-
-
-[Go here](#custom-anchor)
-
-<a href="https://lazicsasa.com" target="_blank" rel="noopener noreferrer">
-  <img src="images/blok_koda_primer.png" alt="My Logo">
-</a>
-
-[Link](#This-is-a-header)
-
-[clickMe](https://github.com/lazicsasa/mdTutorial/blob/main/README.md#mdTutorijal)
-
-
-
-# Markdown Syntax Explain
+### Linkovi - Web Tutorijali za Markdown syntax
 
 [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 
 [Extended Syntax](https://www.markdownguide.org/extended-syntax/)
 
-### Proba za naslov 321
 ---
 
-# Markdown: Syntax
-
-*   [Overview](#overview)
-    *   [Philosophy](#philosophy)
-    *   [Inline HTML](#html)
-    *   [Automatic Escaping for Special Characters](#autoescape)
-*   [Block Elements](#block)
-    *   [Paragraphs and Line Breaks](#p)
-    *   [Headers](#header)
-    *   [Blockquotes](#blockquote)
-    *   [Lists](#list)
-    *   [Code Blocks](#precode)
-    *   [Horizontal Rules](#hr)
-*   [Span Elements](#span)
-    *   [Links](#link)
-    *   [Emphasis](#em)
-    *   [Code](#code)
-    *   [Images](#img)
-*   [Miscellaneous](#misc)
-    *   [Backslash Escapes](#backslash)
-    *   [Automatic Links](#autolink)
+## Naslovi u md fajlu
 
 
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
-
-----
-<a id="custom-anchor"></a>
-## Overview
-
-### Philosophy
-
-Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
-
-Readability, however, is emphasized above all else. A Markdown-formatted
-document should be publishable as-is, as plain text, without looking
-like it's been marked up with tags or formatting instructions. While
-Markdown's syntax has been influenced by several existing text-to-HTML
-filters -- including [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
-[Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of
-inspiration for Markdown's syntax is the format of plain text email.
-
-## Block Elements
-
-### Paragraphs and Line Breaks
-
-A paragraph is simply one or more consecutive lines of text, separated
-by one or more blank lines. (A blank line is any line that looks like a
-blank line -- a line containing nothing but spaces or tabs is considered
-blank.) Normal paragraphs should not be indented with spaces or tabs.
-
-The implication of the "one or more consecutive lines of text" rule is
-that Markdown supports "hard-wrapped" text paragraphs. This differs
-significantly from most other text-to-HTML formatters (including Movable
-Type's "Convert Line Breaks" option) which translate every line break
-character in a paragraph into a `<br />` tag.
-
-When you *do* want to insert a `<br />` break tag using Markdown, you
-end a line with two or more spaces, then type return.
-
-### Headers
-
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
-
-Optionally, you may "close" atx-style headers. This is purely
-cosmetic -- you can use this if you think it looks better. The
-closing hashes don't even need to match the number of hashes
-used to open the header. (The number of opening hashes
-determines the header level.)
+```
+# Naslov1
+```
+# Naslov1
+```
+## Naslov2
+```
+## Naslov2
+```
+### Naslov3
+```
+### Naslov3
+```
+#### Naslov4
+```
+#### Naslov4
+```
+##### Naslov5
+```
+##### Naslov5
 
 ---
-### Blockquotes
+## Paragraf
+Za novi paragraf koristiti prazan red.
+Ako nema praznog reda tekst se nastavlja u istom paragrafu.
+
+Ovaj tekst je u novom paragrafu
+
+<p style="color:red">Kolor za paragraf je moguć u nekim editorima (kao što je VS Code), dok je u GitHub-u onemogućen CSS kod zbog sigurnosti, pa tako promena boje teksta nije moguća.</p>
+
+Primer za ***promenu boje teksta za VS Code***
+```
+<p style="color:red">Text</p>
+```
+GitHub nedozvoljava upotrebu CSS tagova, ali možemo koristiti HTML tagove u md fajlovima, za prikaz *bold/italic* teksta, za prelazak u sledeći red `<br>`, za prikaz linije u dokumentu `<hr>` 
+Primer...
+`<b><i>Text bold/italic - HTML tag</b></i>`
+
+`<b>Proba za BOLD teksta</b><br>`
+
+Osim HTML tagova za bold ili italic prikaz teksta možemo koristiti i md syntax...
+
+BOLD - `**Primer teksta**` **Primer teksta**
+
+ITALIC - `*Primer teksta*` *Primer teksta*
+
+BOLD/ITALIC - `***Primer teksta***` ***Primer teksta***
+
+Za *underline* sintaksa je...
+`Some of these words <ins>will be underlined</ins>.`
+Some of these words <ins>will be underlined</ins>.
+
 ---
-Markdown uses email-style `>` characters for blockquoting. If you're
-familiar with quoting passages of text in an email message, then you
-know how to create a blockquote in Markdown. It looks best if you hard
-wrap the text and put a `>` before every line:
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-> id sem consectetuer libero luctus adipiscing.
+## Blokovi teksta
+Da bi se kreirali vidljivi blokovi teksta postavlja se znak `>` ispred paragrafa.
+Blokovi mogu biti višelinijski ili mogu imati više paragrafa. Primeri...
 
-Markdown allows you to be lazy and only put the `>` before the first
-line of a hard-wrapped paragraph:
+**Sintaksa za jednoredni blok**
+```
+>Ovde_ide_sadržaj_jednorednog_bloka
+```
+>Ovde_ide_sadržaj_jednorednog_bloka
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+**Sintaksa za višerednog bloka - jedan paragraf**
+```
+>Ovde_ide_sadržaj_prvog_reda
+>Ovde_ide_sadržaj_drugog_reda
+```
+>Ovde_ide_sadržaj_prvog_reda
+>Ovde_ide_sadržaj_drugog_reda
 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-
-Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
-adding additional levels of `>`:
-
-> This is the first level of quoting.
+**Sintaksa za blok sa više paragrafa**
+```
+>Ovde_ide_sadržaj_prvog_reda
 >
-> > This is nested blockquote.
+>Ovde_ide_sadržaj_drugog_reda
+```
+>Ovde_ide_sadržaj_prvog_paragrafa
 >
-> Back to the first level.
+>Ovde_ide_sadržaj_drugog_paragrafa
 
-Blockquotes can contain other Markdown elements, including headers, lists,
-and code blocks:
-
-> ## This is a header
-> 
-> 1.   This is the first list item.
-> 2.   This is the second list item.
-> 
-> Here's some example code:
-> 
->       return shell_exec("echo $input | $markdown_script");
-
-Any decent text editor should make email-style quoting easy. For
-example, with BBEdit, you can make a selection and choose Increase
-Quote Level from the Text menu.
+Blokovi mogu sadržati i druge elemente (naslove, liste, tabele, druge ugnežđene blokove,...)
 
 ---
 
-### Subscript and Superscript in Markdown file for GitHub
+## Liste
+
+Liste u md fajlovima mogu biti sredjene (redni brojevi) ili nesredjene 
+
+**Sintaksa za sredjene liste**
+```
+1. Item 1
+2. Item 2
+3. Item 3
+4. Item 4
+```
+1. Item 1
+2. Item 2
+3. Item 3
+4. Item 4
+
+>Za sredjene liste koristimo brojeve `1, 2, 3, 4, ...`
+
+**Sintaksa za nesredjene liste** 
+
+Za nesredjene liste koristimo znakove `-, +, *`
+
+```
+* Item 1
+* Item 2
+* Item 3
+* Item 4
+```
+* Item 1
+* Item 2
+* Item 3
+* Item 4
+
+Nesredjene liste mogu biti ugneždjene kada ih uvlačimo sa `tab`
+
+```
+* Item 1
+* Item 2
+    * Item 3
+    * Item 3
+* Item 3
+* Item 4
+```
+* Item 1
+* Item 2
+    * Item 3
+    * Item 3
+* Item 3
+* Item 4
+
+---
+
+## Slike {#anchorID}
+
+Sintaksa za prikaz slika u md fajlovima...
+```
+![nazivFajla](images/file.png "Tekst koji se pojavljuje prelaskom kursora miša")
+```
+![nazivFajla](images/github.jpg "Tekst koji se pojavljuje prelaskom kursora miša")
+
+Slike se mogu setovati i HTML kodom kada možemo setovati i veličinu slike...
+>`<img src="image.png" width="200" height="100">`
+
+<img src="images/github.png" width="200" height="100"><br>
+
+<img src="images/github.png" width="100">
+<img src="images/github.png" width="150">
+<img src="images/github.png" width="200">
+
+Provereno radi i na GitHub-u 
+
+<!-- NOTE Ovo još razraditi, po potrebi -->
+
+---
+## Linkovi
+Sintaksa za linkove u md fajlovima...
+*[Tekst linka](URL Adresa)*
+```
+[clickMe](https://lazicsasa.com)
+```
+[clickMe](https://lazicsasa.com "Tekst koji se pojavljuje kada se postavi kursor miša")
+
+U VS Code i drugim editorima koji mogu prikazati md fajlove dozvoljeno je koristiti html tagove za linkove. GitHub sanetizuje iz sigurnosnih razloga neke HTML tagove (target, onclick, style, etc.) tako da ih ignoriše i ne možemo ih koristiti za md fajlove u GitHub-u. Bilo je već reči za text color.
+
+#### Anchor Linkovi - Linkovi ka naslovu
+
+Osim spoljnih adresa (van md fajla) možemo praviti linkove ka pointu (anchor) u okviru istog fajla ili nekog drugog fajla, ali i ovde GitHub pravi ograničenja, što ćemo kasnije objasniti. 
+Sintaksa za *Anchor Link* md fajlova je...
+```
+[clickMe for link on Anchor](#anchorID)
+``` 
+[clickMe for link on Anchor](#anchorID) ... gde se *anchorID* obeležava u md fajlu sintaksom...
+```
+## Neki naslov {#anchorID}
+```
+Anchor Linkovi u okviru istog fajla ili drugog se mogu praviti samo na naslove. Za VS Code (provereno) se koristi *Anchor*, dok u GitHub-u nije potrebno pored naslova kreirati *Anchor* već je dovoljno samo navesti naslov. Prazna mesta se popunjavaju sa ` - `, kao u sledećem primeru...
+```
+[clickMe](#Naslov-sa-vise-reci)
+```
+Za AnchorLink ka naslovu drugog fajla potrebno je (za GitHub) navesti punu URL adresu sa nazivom fajla i dodati bez razmaka `#Naslov-za-link`
+```
+[clickMe](https://github.com/lazicsasa/mdTutorial/blob/main/README.md#mdTutorijal)
+```
+[clickMe](https://github.com/lazicsasa/mdTutorial/blob/main/README.md#mdTutorijal)
+
+Ipak, osim ka naslovima možemo HTML tagom **`<a id="custom-anchor"></a>`** napraviti *Anchor* i usmeriti Link na njega, bilo gde u fajlu ili u nekom drugom fajlu... 
+**`[Go here](#custom-anchor)`**
+
+Isto tako možemo kreirati link ka Anchor-u u drugom fajlu ... primer...
+`[Go here](https://github.com/lazicsasa/mdTutorial/blob/main/README.md#custom-anchor)`
+[Go here](https://github.com/lazicsasa/mdTutorial/blob/main/README.md#custom-anchor)
+
+> *Dobra praksa za GitHub je da se piše cela URL adresa.*
+
+#### Slika kao pointer za Link
+U md fajlu možemo koristiti sliku kao pointer za Link. Sintaksa je...
+```
+[![GitHub Logo](images/github.jpg)](https://lazicsasa.com)
+```
+[![GitHub Logo](images/github.png)](https://lazicsasa.com)
+
+---
+
+## Blokovi koda
+Razlikuje se sintaksa md fajlova za VS Code i GitHub za pisanje blokova koda
+Za VS Code dovoljno je kod uvući za 4 mesta (ili 1 tab).
+
+Najbolja praksa za sve je korišćenje znaka `` ` `` za *inline* ispis koda, a za blok koda koriste se 3 znaka `` ``` `` ...
+
+![blok koda](images/blok_koda_primer.png)
+
+```php
+$x = 32;
+echo $x;
+```
+Poželjno je navesti programski jezik za koji se kod odnosi zbog boljeg izgleda bloka koda, ali nije obavezno. Dobra je stvar što GitHub na bloku koda automatski generiše *Copy* ikonicu što olakšava kopiranje bloka koda. 
+
+---
+
+## Subscript and Superscript
 
 GitHub ne prihvata klasičan md skript za subscript i superscript, kao što je primer za VS Code ...
 
@@ -199,266 +250,95 @@ moraju se koristiti `<sub> ... </sub>` ili `<sup> ... </sup>` HTML tagovi
 
 ---
 
-### Lists
+## Tabele
+Da bi se formirala tabela u md fajlovima (važi i za GitHub) potrebno je odvojiti kolone sa uspravnim znakom ` | ` i koristiti 3 ili više crtica ` ----- ` u drugom redu tabela. Primer...
+| Naslov1     | Naslov2     |
+| ----------- | ----------- |
+| Text        | Text        |
+| Text        | Text        |
+| Text        | Text        |
 
-Markdown supports ordered (numbered) and unordered (bulleted) lists.
-
-Unordered lists use asterisks, pluses, and hyphens -- interchangably
--- as list markers:
-
-*   Red
-*   Green
-*   Blue
-
-is equivalent to:
-
-+   Red
-+   Green
-+   Blue
-
-and:
-
--   Red
--   Green
--   Blue
-
-Ordered lists use numbers followed by periods:
-
-1.  Bird
-2.  McHale
-3.  Parish
-
-It's important to note that the actual numbers you use to mark the
-list have no effect on the HTML output Markdown produces. The HTML
-Markdown produces from the above list is:
-
-If you instead wrote the list in Markdown like this:
-
-1.  Bird
-1.  McHale
-1.  Parish
-
-or even:
-
-3. Bird
-1. McHale
-8. Parish
-
-you'd get the exact same HTML output. The point is, if you want to,
-you can use ordinal numbers in your ordered Markdown lists, so that
-the numbers in your source match the numbers in your published HTML.
-But if you want to be lazy, you don't have to.
-
-To make lists look nice, you can wrap items with hanging indents:
-
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
-
-But if you want to be lazy, you don't have to:
-
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
-
-List items may consist of multiple paragraphs. Each subsequent
-paragraph in a list item must be indented by either 4 spaces
-or one tab:
-
-1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
-
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-
-It looks nice if you indent every line of the subsequent
-paragraphs, but here again, Markdown will allow you to be
-lazy:
-
-*   This is a list item with two paragraphs.
-
-    This is the second paragraph in the list item. You're
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
-
-*   Another item in the same list.
-
-To put a blockquote within a list item, the blockquote's `>`
-delimiters need to be indented:
-
-*   A list item with a blockquote:
-
-    > This is a blockquote
-    > inside a list item.
-
-To put a code block within a list item, the code block needs
-to be indented *twice* -- 8 spaces or two tabs:
-
-*   A list item with a code block:
-
-        <code goes here>
-
-### Code Blocks
-
-Pre-formatted code blocks are used for writing about programming or
-markup source code. Rather than forming normal paragraphs, the lines
-of a code block are interpreted literally. Markdown wraps a code block
-in both `<pre>` and `<code>` tags.
-
-To produce a code block in Markdown, simply indent every line of the
-block by at least 4 spaces or 1 tab.
-
-This is a normal paragraph:
-
-    This is a code block.
-
-Here is an example of AppleScript:
-
-    tell application "Foo"
-        beep
-    end tell
-
-A code block continues until it reaches a line that is not indented
-(or the end of the article).
-
-Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
-are automatically converted into HTML entities. This makes it very
-easy to include example HTML source code using Markdown -- just paste
-it and indent it, and Markdown will handle the hassle of encoding the
-ampersands and angle brackets. For example, this:
-
-    <div class="footer">
-        &copy; 2004 Foo Corporation
-    </div>
-
-&copy; 2004 Foo Corporation
-
-Regular Markdown syntax is not processed within code blocks. E.g.,
-asterisks are just literal asterisks within a code block. This means
-it's also easy to use Markdown to write about Markdown's own syntax.
-
+Za pozicioniranje sadržaja u polju kolone koristimo znak ` : ` levo-desno-obe strane, po potrebi...
 ```
-tell application "Foo"
-    beep
-end tell
+| Naslov1     | Naslov2     | Naslov 3    |
+| :---------- | :---------: | ----------: |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
 ```
 
-```python
-def hello():
-print("Hello, world!")
-```
-```php
-$x = 26;
-echo $x;
-```
+| Naslov1     | Naslov2     | Naslov 3    |
+| :---------- | :---------: | ----------: |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
+| Text        | Text        | Text        |
+
+
 
 ---
 
-### Links
+## Specijalni karakteri
 
-Markdown supports two style of links: *inline* and *reference*.
+Korišćenje HTML specijalnih karaktera u md fajlovima...
+Primer `&copy; 2004 Foo Corporation` - &copy; 2004 Foo Corporation
 
-In both styles, the link text is delimited by [square brackets].
+Ostali specijalni karakteri...
 
-To create an inline link, use a set of regular parentheses immediately
-after the link text's closing square bracket. Inside the parentheses,
-put the URL where you want the link to point, along with an *optional*
-title for the link, surrounded in quotes. For example:
-
-This is [an example](http://example.com/) inline link.
-
-[This link](http://example.net/) has no title attribute.
-
-[Link u okviru fajla](#custom-id) Ovo je primenljivo za VS Code, nije za GitHub
-
-<p style="color: red">Ovo nije primenljivo za GitHub, linkovi se pišu drugačije</p>
-
-Pravilo za Sintaksu *linkova* u GitHub-u je da se u okviru istog fajla mogu praviti linkovi samo ka naslovima (# ## ili ###)
-
-[link](#Manji-naslov)
-
-[link2](#Najmanji-naslov)
-
-
-Za link ka drugom fajlu i njegovom nekom naslovu moramo koristiti celu putanju do fajla kao što je u sledećem primeru, iako je fajl u istom repositorijumu...
-
-[link3](https://github.com/lazicsasa/mdTutorial/blob/main/TEST.md#Paragraphs-and-Line-Breaks) - Otvara ga u Browser-u
-
-Primer za link u okviru istog fajla...
-
-### My Great Heading {#custom-id} 
-
-<p style="color:red;">Ovakav link ne radi na GitHub-u</p>
-
-Za GitHub je dovoljno da se link veže za neki naslov (# ## ili ###)
-
-<p style="color:green;">Da bi se napravio <i>anchor</i> i link ka njemu </p>
-...ovo je primer...
-
-Za anchor sintaksa je kao u HTML-u ... 
-`<a id="custom-anchor"></a>`
-...a link se pravi...
-`[Go here](#custom-anchor)`
-
-Probano na GitHub-u - RADi!!!
+| Sintaksa   | Znak     | Opis         |
+| :---:      |  :----:  | :---         |
+| `&copy;`   | &copy;   | Copyright    |
+| `&reg;`    | &reg;    | Registered   |
+| `&trade;`  | &trade;  | Trademark    |
+| `&sect;`   | &sect;   | Section      |
+| `&para;`   | &para;   | Paragraph    |
+| `&euro;`   | &euro;   | Euro         |
+| `&dollar;` | &dollar; | Dollar       |
+| `&pound;`  | &pound;  | Pound        |
+| `&yen;`    | &yen;    | Yen          |
+| `&cent;`   | &cent;   | Cent         |
+| `&frac14;` | &frac14; | Math         |
+| `&frac12;` | &frac12; | Math         |
+| `&frac34;` | &frac34; | Math         |
+| `&le;`     | &le;     | Math         |
+| `&ge;`     | &ge;     | Math         |
+| `&ne;`     | &ne;     | Math         |
+| `&asymp;`  | &asymp;  | Math         |
+| `&infin;`  | &infin;  | Math         |
+| `&plusmn;` | &plusmn; | Math         |
+| `&radic;`  | &radic;  | Math         |
+| `&sum;`    | &sum;    | Math         |
+| `&check;`  | &check;  | Checkmark    |
+| `&cross;`  | &cross;  | Checkmark    |
+| `&bull;`   | &bull;   | Checkmark    |
+| `&starf;`  | &starf;  | Checkmark    |
+| `&star;`   | &star;   | Checkmark    |
+| `&alpha;`  | &alpha;  | Greek letter |
+| `&beta;`   | &beta;   | Greek letter |
+| `&gamma;`  | &gamma;  | Greek letter |
+| `&delta;`  | &delta;  | Greek letter |
+| `&theta;`  | &theta;  | Greek letter |
+| `&lambda;` | &lambda; | Greek letter |
+| `&pi;`     | &pi;     | Greek letter |
+| `&sigma;`  | &sigma;  | Greek letter |
+| `&omega;`  | &omega;  | Greek letter |
+| `&larr;`   | &larr;   | Arrow        |
+| `&rarr;`   | &rarr;   | Arrow        |
+| `&uarr;`   | &uarr;   | Arrow        |
+| `&darr;`   | &darr;   | Arrow        |
+| `&harr;`   | &harr;   | Arrow        |
+| `&rArr;`   | &rArr;   | Arrow        |
+| `&lArr;`   | &lArr;   | Arrow        |
+| `x<sup>2</sup>`   | x<sup>2</sup>    | Superscript  |
+| `H<sub>2</sub>O`  | H<sub>2</sub>O   | Subscript    |
 
 ---
 
-[Link sasa](#Proba-za-naslov-321)
+## Fusnote
 
-### Emphasis
 
-Markdown treats asterisks (`*`) and underscores (`_`) as indicators of
-emphasis. Text wrapped with one `*` or `_` will be wrapped with an
-HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
-`<strong>` tag. E.g., this input:
 
-*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-
-### Code
-
-To indicate a span of code, wrap it with backtick quotes (`` ` ``).
-Unlike a pre-formatted code block, a code span indicates code within a
-normal paragraph. For example:
-
-Use the `printf()` function.
-
-```php
-function hdashdh() {
-    $a = $b + $c;
-}
-```
-
-Ovo mora da se prikaže kao kod `$ovo_ovde = 25;`
-
-```php
-
-echo "Tri bitne funkcije PHP-a za manipulaciju datumom su :<br>";
-echo  "<li>date()</li>";
-echo  "<li>time()</li>";
-echo  "<li>strtotime()</li><hr>";
-echo "Funkcija <i><b>time()</b></i> ispisuje vreme u sekundama od 01.01.1970. godine - <b>".time()."</b> i vraća ceo broj <br>";
-$x=time(); var_dump($x);echo "<br>";
-echo "Funkcija <i><b>date()</b></i> ispisuje traženi parametar - <b>".date("d-m-Y")."</b> i ona je string<br>";
-$x=date("d-m-Y H:i:s"); var_dump($x);echo "<br>";
-echo "Vidimo da funkcijom <i><b>date()</b></i> dobijamo zapis datuma ili vremena u string formatu koji nam je potreban<br>";
-
-```
----
 
 
 Here's a simple footnote,[^1].
@@ -470,34 +350,8 @@ Here's a simple footnote,[^3].
 
 ---
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [This link](https://lazicsasa.com/) has no title attribute. |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
----
-
-## Images
-
-![This is an alt text.](https://markdownlivepreview.com/image/Markdown-mark.svg "This is a sample image.")
-
----
-
-First Term
-: This is the definition of the first term.
-
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
-
-~~sadadasdasd~~
-
----
-### Task list
+## Task liste
+<!-- NOTE Objašnjenje za pravljenje task liste i komentar da se ne koriste često -->
 
 - [x] Write the press release
 - [ ] Update the website
@@ -515,59 +369,18 @@ I drugi primer za ***Task***
 
 ---
 
-I need to highlight these ==very important words==.
-
----
-
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
----
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
-
----
-
-
-[Heading IDs](readme.md#heading-ids)
-
----
-# Centriranje texta i naslova
-
-<center>This text is centered.</center>
-
-# <center>This naslov veći is centered.</center>
-
-## <center>This naslov manji is centered.</center>
-
----
-
-Some of these words <ins>will be underlined</ins>.
-
----
-
-<p style="color: red;">This text is red!</p>
-
-<font color="blue">This text is blue!</font>
-
----
-
-## Comments
+## Komentari
+<!--NOTE Objasniti da se mogu pisati komentari kao u HTML tekstu ili u primeru ispod (md sintaksa) -->
 
 Here's a paragraph that will be visible.
 
-[This is a comment that will be hidden.]: # 
+[This is a comment that will be hidden.]: #
 
 And here's another paragraph that's visible.
 
 ---
 ### Ikonice u Markdown textu
+<!-- NOTE Ikonice prebaciti u tabelu zbog sintakse i izgleda ikonice -->
 
 Ovde su navedene neke. Opširnije ima na [linku](https://dev.to/nikolab/complete-list-of-github-markdown-emoji-markup-5aia).
 
@@ -626,41 +439,13 @@ Ovde su navedene neke. Opširnije ima na [linku](https://dev.to/nikolab/complete
 
 ---
 
-### Korišćenje html i CSS tagova u .md fajlu
 
-Dozvoljeno je korišćenje HTML i CSS tagova u Markdown fajlu i oni ih generišu kao u HTML fajlu
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;">
-I am a success message
-</div>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #a94442; background-color: #f2dede; border-color: #ebccd1;">
-I am an error message
-</div>
-
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #31708f; background-color: #d9edf7; border-color: #bce8f1;">
-I am a info message
-</div>
-
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #8a6d3b;; background-color: #fcf8e3; border-color: #faebcc;">
-I am a warning message
-</div>
-
----
-
-[Običan link ka *`lazicsasa.com`*](https://lazicsasa.com/)
-
----
-
-### Ignoring Markdown formatting
-
-You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
-
-Let's rename \*our-new-project\* to \*our-old-project\*.
-
----
 
 ## Writing mathematical expressions
+<!-- NOTE Videti za matematičke formule koliko da se opiše i postavi u tutorijalu. Ovo ostaviti za kraj, nije relevantno toliko -->
+
 
 Use Markdown to display mathematical expressions on GitHub.
 Who can use this feature?
@@ -709,12 +494,9 @@ Outside a math expression, but on the same line, use span tags around the explic
 
 To split \$100 in half, we calculate $100/2$
 
----
 
 
 
-
----
 
 
 [^1]: This is the first footnote.
