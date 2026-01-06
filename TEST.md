@@ -4,6 +4,8 @@
   <img src="images/blok_koda_primer.png" alt="My Logo">
 </a>
 
+[Link](#This-is-a-header)
+
 
 # Markdown Syntax Explain
 
@@ -121,7 +123,7 @@ adding additional levels of `>`:
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
 
-> ## This is a header.
+> ## This is a header
 > 
 > 1.   This is the first list item.
 > 2.   This is the second list item.
