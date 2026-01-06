@@ -6,29 +6,24 @@
 
 ---
 
-## Naslovi u md fajlu
+## Naslovi
 
 
 ```
 # Naslov1
 ```
-# Naslov1
 ```
 ## Naslov2
 ```
-## Naslov2
 ```
 ### Naslov3
 ```
-### Naslov3
 ```
 #### Naslov4
 ```
-#### Naslov4
 ```
 ##### Naslov5
 ```
-##### Naslov5
 
 ---
 ## Paragraf
@@ -147,13 +142,13 @@ Nesredjene liste mogu biti ugneždjene kada ih uvlačimo sa `tab`
 
 ---
 
-## Slike {#anchorID}
+## Slike
 
 Sintaksa za prikaz slika u md fajlovima...
 ```
 ![nazivFajla](images/file.png "Tekst koji se pojavljuje prelaskom kursora miša")
 ```
-![nazivFajla](images/github.jpg "Tekst koji se pojavljuje prelaskom kursora miša")
+![nazivFajla](images/github.png "Tekst koji se pojavljuje prelaskom kursora miša")
 
 Slike se mogu setovati i HTML kodom kada možemo setovati i veličinu slike...
 >`<img src="image.png" width="200" height="100">`
@@ -163,11 +158,7 @@ Slike se mogu setovati i HTML kodom kada možemo setovati i veličinu slike...
 <img src="images/github.png" width="100">
 <img src="images/github.png" width="150">
 <img src="images/github.png" width="200">
-
-Provereno radi i na GitHub-u 
-
-<!-- NOTE Ovo još razraditi, po potrebi -->
-
+ 
 ---
 ## Linkovi
 Sintaksa za linkove u md fajlovima...
