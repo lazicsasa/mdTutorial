@@ -1,6 +1,10 @@
 Proba za blok koda
 
-`Blok koda`
+`Blok koda` Ovo je inline kod
+
+```
+Ovo je blok koga u GitHub-u koji ima Copy ikonu 
+```
 
 Novi paragraf
 
