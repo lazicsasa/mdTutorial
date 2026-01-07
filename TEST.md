@@ -327,7 +327,7 @@ Ostali specijalni karakteri...
 ---
 
 ## Fusnote
-
+<!-- NOTE Ovo završiti !!! Objašnjenje za fusnote i primeri -->
 
 
 
@@ -361,129 +361,107 @@ I drugi primer za ***Task***
 ---
 
 ## Komentari
-<!--NOTE Objasniti da se mogu pisati komentari kao u HTML tekstu ili u primeru ispod (md sintaksa) -->
+Komentari se u md fajlovima mogu pisati kao HTML komentar ili sintaksom ...
 
-Here's a paragraph that will be visible.
+>*Komentar HTML kod*
+>`<!-- Ovo je komentar koji će biti sakriven -->`
+>
+><!-- Ovo je komentar koji će biti sakriven -->
 
-[This is a comment that will be hidden.]: #
-
-And here's another paragraph that's visible.
-
----
-### Ikonice u Markdown textu
-<!-- NOTE Ikonice prebaciti u tabelu zbog sintakse i izgleda ikonice -->
-
-Ovde su navedene neke. Opširnije ima na [linku](https://dev.to/nikolab/complete-list-of-github-markdown-emoji-markup-5aia).
-
-> :warning: **Warning:** Do not push the big red button.
-
-> :memo: **Note:** Sunrises are beautiful.
-
-> :bulb: **Tip:** Remember to appreciate the little things in life.
-
-> :blush: **Smajli:** Remember to appreciate the little things in life.
-
-> :exclamation: **Smajli:** Remember to appreciate the little things in life.
-
-> :question: **Smajli:** Remember to appreciate the little things in life.
-
-> :thumbsup: **Smajli:** Remember to appreciate the little things in life.
-
-> :point_right: **Smajli:** Remember to appreciate the little things in life.
-
-> **Smajli:** Remember to appreciate the little things in life. :point_left:
-
-> :speech_balloon: ***Ovo je primer za naslov*** 
-> **Smajli:** Remember to appreciate the little things in life.
-
-> :floppy_disk: **Smajli:** Remember to appreciate the little things in life.
-
-> :computer: **Smajli:** Remember to appreciate the little things in life.
-
-> :house: **Smajli:** Remember to appreciate the little things in life.
-
-> :warning: **Smajli:** Remember to appreciate the little things in life.
-
-> :zero::six::four::eight::one::two::six::five::seven::seven: **Mobilni:** Remember to appreciate the little things in life.
-
-> :nine: **Smajli:** Remember to appreciate the little things in life.
-
-> :mens: **Smajli:** Remember to appreciate the little things in life.
-
-> :no_entry: **Smajli:** Remember to appreciate the little things in life.
-
-> :no_entry_sign: **Smajli:** Remember to appreciate the little things in life.
-
-> :a: **Smajli:** Remember to appreciate the little things in life.
-
-> :ab: **Smajli:** Remember to appreciate the little things in life.
-
-> :abc: **Smajli:** Remember to appreciate the little things in life.
-
-> :clock9: **Smajli:** Remember to appreciate the little things in life.
-
-> :heavy_check_mark: **Smajli:** Remember to appreciate the little things in life.
-
-> :white_check_mark: **Smajli:** Remember to appreciate the little things in life.
-
-> :copyright: **Smajli:** Remember to appreciate the little things in life.
+>*Komentar md sintaksa*
+>`[Ovo je komentar koji će biti sakriven]: #`
+>
+>[Ovo je komentar koji će biti sakriven]: #
 
 ---
+### Ikonice
+
+Ovde su navedene najčešće korišćene, opširnije na [linku](https://dev.to/nikolab/complete-list-of-github-markdown-emoji-markup-5aia).
+
+| Sintaksa                   | Znak                     | 
+| :------:                   |  :-------:               | 
+| `:warning:`                | :warning:                | 
+| `:memo:`                   | :memo:                   | 
+| `:bulb:`                   | :bulb:                   | 
+| `:blush:`                  | :blush:                  | 
+| `:exclamation:`            | :exclamation:            | 
+| `:question:`               | :question:               | 
+| `:thumbsup:`               | :thumbsup:               | 
+| `:thumbsdown:`             | :thumbsdown:             | 
+| `:point_right:`            | :point_right:            | 
+| `:point_left:`             | :point_left:             | 
+| `:hand:`                   | :hand:                   | 
+| `:relaxed:`                | :relaxed:                | 
+| `:smirk:`                  | :smirk:                  | 
+| `:flushed:`                | :flushed:                | 
+| `:heart:`                  | :heart:                  | 
+| `:star:`                   | :star:                   | 
+| `:cd:`                     | :cd:                     | 
+| `:telephone_receiver:`     | :telephone_receiver:     | 
+| `:sound:`                  | :sound:                  | 
+| `:mute:`                   | :mute:                   | 
+| `:hourglass:`              | :hourglass:              | 
+| `:alarm_clock:`            | :alarm_clock:            | 
+| `:watch:`                  | :watch:                  | 
+| `:lock:`                   | :lock:                   | 
+| `:unlock:`                 | :unlock:                 | 
+| `:key:`                    | :key:                    | 
+| `:wrench:`                 | :wrench:                 | 
+| `:credit_card:`            | :credit_card:            | 
+| `:envelope:`               | :envelope:               | 
+| `:incoming_envelope:`      | :incoming_envelope:      | 
+| `:page_facing_up:`         | :page_facing_up:         | 
+| `:pencil2:`                | :pencil2:                | 
+| `:closed_book:`            | :closed_book:            | 
+| `:pushpin:`                | :pushpin:                | 
+| `:scissors:`               | :scissors:               | 
+| `:open_file_folder:`       | :open_file_folder:       | 
+| `:spades:`                 | :spades:                 | 
+| `:hearts:`                 | :hearts:                 | 
+| `:clubs:`                  | :clubs:                  | 
+| `:diamonds:`               | :diamonds:               | 
+| `:game_die:`               | :game_die:               | 
+| `:headphones:`             | :headphones:             | 
+| `:anchor:`                 | :anchor:                 | 
+| `:speech_balloon:`         | :speech_balloon:         | 
+| `:floppy_disk:`            | :floppy_disk:            | 
+| `:computer:`               | :computer:               | 
+| `:house:`                  | :house:                  | 
+| `:zero:`                   | :zero:                   | 
+| `:one:`                    | :one:                    | 
+| `:two:`                    | :two:                    | 
+| `:three:`                  | :three:                  | 
+| `:no_entry:`               | :no_entry:               | 
+| `:mens:`                   | :mens:                   | 
+| `:no_entry_sign:`          | :no_entry_sign:          | 
+| `:a:`                      | :a:                      | 
+| `:ab:`                     | :ab:                     | 
+| `:abc:`                    | :abc:                    | 
+| `:clock9:`                 | :clock9:                 | 
+| `:heavy_check_mark:`       | :heavy_check_mark:       | 
+| `:x:`                      | :x:                      | 
+| `:heavy_exclamation_mark:` | :heavy_exclamation_mark: | 
+| `:white_check_mark:`       | :white_check_mark:       | 
+| `:interrobang:`            | :interrobang:            | 
+| `:copyright:`              | :copyright:              | 
+
+
+---
 
 
 
+## Matematičke formule
+Primeri za pisanje matematičkih formula u md fajlovima
 
+>`$\sqrt{3x-1}+(1+x)^2$`
+>
+>$\sqrt{3x-1}+(1+x)^2$
 
-## Writing mathematical expressions
-<!-- NOTE Videti za matematičke formule koliko da se opiše i postavi u tutorijalu. Ovo ostaviti za kraj, nije relevantno toliko -->
+Matematičke formule se mogu pisati sa delimiterom ` $$ ` ili u bloku koda ` ``` math ` kada se izostavlja delimiter ` $$ `
 
-
-Use Markdown to display mathematical expressions on GitHub.
-Who can use this feature?
-
-There are two options for delimiting a math expression inline with your text. You can either surround the expression with dollar symbols ($), or start the expression with $` and end it with `$. The latter syntax is useful when the expression you are writing contains characters that overlap with markdown syntax. For more information, see Basic writing and formatting syntax.
-
-$\sqrt{3x-1}+(1+x)^2$
-
-Screenshot of rendered Markdown showing an inline mathematical expression: the square root of 3x minus 1 plus (1 plus x) squared.
-
-$\sqrt{3x-1}+(1+x)^2$
-
-Screenshot of rendered Markdown showing an inline mathematical expression with backtick syntax: the square root of 3x minus 1 plus (1 plus x) squared.
-Writing expressions as blocks
-
-To add a math expression as a block, start a new line and delimit the expression with two dollar symbols $$.
-
-Tip
-
-If you're writing in an .md file, you will need to use specific formatting to create a line break, such as ending the line with a backslash as shown in the example below. For more information on line breaks in Markdown, see Basic writing and formatting syntax.
-
-**The Cauchy-Schwarz Inequality**\
+`$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$`
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
-Screenshot of rendered Markdown showing a complex equation. Bold text reads "The Cauchy-Schwarz Inequality" above the formula for the inequality.
-
-Alternatively, you can use the ```math code block syntax to display a math expression as a block. With this syntax, you don't need to use $$ delimiters. The following will render the same as above:
-
-**The Cauchy-Schwarz Inequality**
-
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
-
-Writing dollar signs in line with and within mathematical expressions
-
-To display a dollar sign as a character in the same line as a mathematical expression, you need to escape the non-delimiter $ to ensure the line renders correctly.
-
-Within a math expression, add a \ symbol before the explicit $.
-
-This expression uses `\$` to display a dollar sign: $`\sqrt{\$4}`$
-
-Screenshot of rendered Markdown showing how a backslash before a dollar sign displays the sign as part of a mathematical expression.
-
-Outside a math expression, but on the same line, use span tags around the explicit $.
-
-To split \$100 in half, we calculate $100/2$
 
 
 
